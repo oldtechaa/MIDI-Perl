@@ -749,7 +749,7 @@ MIDI file that may or may not be well-formed.  If this I<is> the kind
 of task you or someone you know may want to do, let me know and I'll
 consider some kind of 'no_die' parameter in future releases.
 (Or just trap the die in an eval { } around your call to anything you
-think you could die.)
+think could die.)
 
 =head1 COPYRIGHT 
 
