@@ -64,7 +64,7 @@ handle, if that's a problem.
 If you specify either C<from_file> or C<from_handle>, you probably
 don't want to specify any of the other options -- altho you may well
 want to specify options that'll get passed down to the decoder in
-MIDI::Events, such as 'include' => ['sysex_f0', 'sysex_f7'], just for
+L<MIDI::Event>, such as C<'include' => ['sysex_f0', 'sysex_f7']>, just for
 example.
 
 Finally, the option C<no_parse> can be used in conjunction with either
@@ -74,7 +74,7 @@ data (i.e., what you get from $track->data).  This is useful if you
 are just moving tracks around across files (or just counting them in
 files, as in the code in the Synopsis, above), without having to deal
 with any of the events in them.  (Actually, this option is implemented
-in code in MIDI::Track, but in a routine there that I've left
+in code in L<MIDI::Track>, but in a routine there that I've left
 undocumented, as you should access it only thru here.)
 
 =cut
