@@ -67,7 +67,7 @@ want to specify options that'll get passed down to the decoder in
 MIDI::Events, such as 'include' => ['sysex_f0', 'sysex_f7'], just for
 example.
 
-Finally, the option C<no_parse> can be used in conjuction with either
+Finally, the option C<no_parse> can be used in conjunction with either
 C<from_file> or C<from_handle>, and, if true, will block MTrk tracks'
 data from being parsed into MIDI events, and will leave them as track
 data (i.e., what you get from $track->data).  This is useful if you

@@ -468,7 +468,7 @@ event durations (default off).
 
 When durations of note events are quantized, they can get 0 duration.
 These events are I<not dropped> from the returned score, and it is the
-responsiblity of the caller to deal with them.
+responsibility of the caller to deal with them.
 
 =cut
 

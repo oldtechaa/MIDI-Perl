@@ -135,7 +135,7 @@ it does provide some hashes you might find useful:
 
 =item C<%MIDI::note2number> and C<%MIDI::number2note>
 
-C<%MIDI::number2note> correponds MIDI note numbers to a more
+C<%MIDI::number2note> corresponds MIDI note numbers to a more
 comprehensible representation (e.g., 68 to 'Gs4', for G-sharp, octave
 4); C<%MIDI::note2number> is the reverse.  Have a look at the source
 to see the contents of the hash.
@@ -168,7 +168,7 @@ to see the contents of the hash.
 
 =item C<%MIDI::patch2number> and C<%MIDI::number2patch>
 
-C<%MIDI::number2patch> correponds General MIDI patch numbers
+C<%MIDI::number2patch> corresponds General MIDI patch numbers
 (0 to 127) to English names (e.g., 79 to 'Ocarina');
 C<%MIDI::patch2number> is the reverse.  Have a look at the source
 to see the contents of the hash.
@@ -243,7 +243,7 @@ to see the contents of the hash.
 
 =item C<%MIDI::notenum2percussion> and C<%MIDI::percussion2notenum>
 
-C<%MIDI::notenum2percussion> correponds General MIDI Percussion Keys
+C<%MIDI::notenum2percussion> corresponds General MIDI Percussion Keys
 to English names (e.g., 56 to 'Cowbell') -- but note that only numbers
 35 to 81 (inclusive) are defined; C<%MIDI::percussion2notenum> is the
 reverse.  Have a look at the source to see the contents of the hash.

@@ -496,7 +496,7 @@ The current acceptable values are:
  B                                 (maps to the value 11)
 
 (Note that these are based on the English names for these notes.  If
-you prefer to add values to accomodate other strings denoting notes in
+you prefer to add values to accommodate other strings denoting notes in
 the octave, you may do so by adding to the hash %MIDI::Simple::Note
 like so:
 
@@ -1812,7 +1812,7 @@ input is a number, and undef/emptylist (C<return;>) if not -- then,
 the user could test:
 
       # Hypothetical --
-      # This fuction doesn't actually work this way:
+      # This function doesn't actually work this way:
       if(defined(my $note_val = is_relative_note_spec($string))) {
          ...do things with $note_val...
       } else {
