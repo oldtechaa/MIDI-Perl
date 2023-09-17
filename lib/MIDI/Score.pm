@@ -31,7 +31,7 @@ are abstracted into a single 'note' item in a score structure.
 
 'note' takes the following form:
 
- ('note_on', I<start_time>, I<duration>, I<channel>, I<note>, I<velocity>)
+ ('note_on', start_time, duration, channel, note, velocity)
 
 The problem that score structures are meant to solve is that 1)
 people definitely don't think in delta-times -- they think in absolute
