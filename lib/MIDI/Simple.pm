@@ -73,7 +73,7 @@ MIDI::Simple - procedural/OOP interface for MIDI composition
  n 'qn', 'F';     n 'Cs';  n 'Ds';  n 'hn', 'Gs_d1';
  n 'qn', 'Gs_d1'; n 'Ds';  n 'F';   n 'hn', 'Cs';
 
- write_score 'westmister_chimes.mid';
+ write_score 'westminster_chimes.mid';
 
 =head1 DESCRIPTION
 
