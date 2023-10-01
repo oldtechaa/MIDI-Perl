@@ -724,18 +724,17 @@ object anymore, since it isn't one.
 
 If you want to use "negative" values for ticks (so says the spec: "If
 division is negative, it represents the division of a second
-represented by the delta-times in the file,[...]"), then it's up to
-you to figure out how to represent that whole ball of wax so that when
-it gets C<pack()>'d as an "n", it comes out right.  I think it'll involve
-something like:
+represented by the delta-times in the file,[...]"), then you'll want to use
+something like this syntax:
 
-  $opus->ticks(  (unpack('C', pack('c', -25)) << 8) & 80  );
+  $opus->ticks( ( -25 << 8 ) | 80 );
 
 for bit resolution (80) at 25 f/s.
 
-But I've never tested this.  Let me know if you get it working right,
-OK?  If anyone I<does> get it working right, and tells me how, I'll
-try to support it natively.
+This is tested to work properly and produce the right header values in the
+resulting output file. However, it should be noted that many MIDI synthesizers
+don't support this header format at last check, such as VLC/Fluidsynth and wildmidi.
+Some do, such as Windows Media Player and Timidity++.
 
 =head1 NOTE ON WARN-ING AND DIE-ING
 
